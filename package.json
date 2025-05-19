@@ -1,0 +1,23 @@
+{
+  "name": "playwright-firefox-headed-bug",
+  "version": "1.0.0",
+  "description": "Simple reproduce repo for Firefox --headless flag bug in Playwright.",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MeshyIce/playwright-firefox-headed-bug.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/MeshyIce/playwright-firefox-headed-bug/issues"
+  },
+  "homepage": "https://github.com/MeshyIce/playwright-firefox-headed-bug#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.52.0",
+    "@types/node": "^22.15.19"
+  }
+}

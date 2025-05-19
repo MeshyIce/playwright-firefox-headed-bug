@@ -1,0 +1,26 @@
+<html>
+  <head></head>
+  <body>
+    <input type="text" id="uploadText" />
+    <div
+      id="uploadFile"
+      style="width: 100%; height: 100%; background-color: lightcoral"
+    >
+      Paste your file onto me
+    </div>
+    <script>
+      window.addEventListener("paste", (event) => {
+        if (event.clipboardData === undefined) {
+          return;
+        }
+
+        const element = document.getElementById("uploadFile");
+        const files = event.clipboardData.files;
+        for (let i = 0; i < files.length; i++) {
+          const file = files[i];
+          element.innerText = `File uploaded: ${file.name}`;
+        }
+      });
+    </script>
+  </body>
+</html>
